@@ -1,0 +1,70 @@
+.feedback h1 {
+  font-family: var(--font);
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  background: url(../img/backreview.png);
+  color: var(--white);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback span {
+  color: var(--button);
+}
+
+.feedback .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+  background-color: var(--background);
+  padding-top: 2rem;
+  background: url(../img/backreview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback .box-container .box {
+  padding: 1rem;
+  text-align: center;
+}
+
+.feedback .box-container .box img {
+  max-width: 50%;
+  border-radius: 2rem;
+}
+
+.feedback .box-container .box h3 {
+  font-family: var(--font);
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: var(--white);
+}
+.feedback .box-container .box h2 {
+  color: var(--white);
+  font-family: var(--font);
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.feedback .box-container .box p {
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: lighter;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+@media (max-width: 900px) {
+  .feedback .box-container .box img {
+    width: 100%;
+  }
+
+  .feedback .box-container .box {
+    padding: 1rem;
+  }
+}

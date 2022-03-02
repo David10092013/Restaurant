@@ -1,0 +1,84 @@
+.title {
+  font-family: var(--font);
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  
+  display: flex;
+  justify-content: center;
+}
+.title span {
+  color: var(--button);
+}
+.imge {
+  min-height: 91.5vh;
+  display: flex;
+  align-items: center;
+  background: url(../img/chef.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background-color: var(--background);
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container h2 {
+  width: 100%;
+}
+.container .box {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+}
+
+.container .box .imge {
+  width: 100%;
+  display: flex;
+}
+
+.container .box .text {
+  font-family: var(--font);
+  margin-left: 1rem;
+  position: flex;
+  margin: auto;
+  width: 50%;
+}
+.container .box .text p {
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+.container .box .text .btn {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 0.1rem solid;
+  background-color: var(--button);
+  color: var(--white);
+}
+.container .box .text h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 950px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container .box {
+    max-width: 450px;
+  }
+
+  .container .box .text {
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  align-items: center;
+  font-family: var(--font);
+  background-color: var(--button);
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.social {
+  display: block;
+
+  margin: 2rem 1rem;
+}
+
+.copyright {
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

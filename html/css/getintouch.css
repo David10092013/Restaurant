@@ -1,0 +1,46 @@
+.contact .row {
+  display: flex;
+  align-items: center;
+  background: var(--background);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.contact h2 {
+  background: var(--background);
+}
+.contact .row .contact-imge {
+  padding: 0;
+  display: flex;
+}
+.contact .row .contact-imge img {
+  display: flex;
+  width: 100%;
+}
+
+.contact .row .information {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-family: var(--font);
+}
+.contact .row .information {
+  margin: auto;
+  width: 30%;
+}
+.contact .row .information p {
+  color: var(--black);
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .contact .row .information img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,46 @@
+:root {
+  --white: #fff;
+  --black: #000000;
+  --button: #ff914d;
+  --restaurant: #d9d9d9;
+  --background: #efefef;
+  --font: 'Bebas Neue', cursive;
+}
+* {
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+section {
+  padding: 2rem;
+}
+
+html {
+  font-size: 62.6%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--white);
+  border-radius: 5rem;
+}
+@media (max-width: 991px) {
+  .html {
+    font-size: 55%;
+  }
+}

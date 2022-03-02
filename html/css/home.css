@@ -1,0 +1,34 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../img/home.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+}
+.home .content {
+  max-width: 30rem;
+  font-family: var(--font);
+}
+.home .content h3 {
+  color: var(--white);
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.home .content p {
+  color: var(--restaurant);
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+.home .content .btn {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 0.1rem solid;
+  background-color: var(--button);
+  color: var(--white);
+}
