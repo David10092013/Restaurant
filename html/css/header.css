@@ -9,10 +9,29 @@
   left: 0;
   right: 0;
   z-index: 1000;
+  background: transparent;
 }
+
+.scrolling-active {
+  background-color: black;
+}
+
+
 
 .header .logo {
   height: 6rem;
+}
+
+.header .icons div {
+  cursor: pointer;
+  margin-left: 2rem;
+}
+.market {
+  display: flex;
+  justify-content: center;
+}
+.market .img {
+  width: 30px;
 }
 
 .header .navbar a {
@@ -26,10 +45,11 @@
 }
 
 .header .navbar a:hover {
-  color: var(--black);
-  border-bottom: 0.2rem solid var(--black);
+  color: var(--button);
+  border-bottom: 0.2rem solid var(--button);
   padding-bottom: 0.5rem;
 }
+
 
 #menu-btn {
   display: none;
@@ -40,6 +60,10 @@
   }
 }
 @media (max-width: 949px) {
+  #market-btn {
+    display: inline-block;
+  }
+
   #menu-btn {
     display: inline-block;
   }

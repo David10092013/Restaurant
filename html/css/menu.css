@@ -30,6 +30,7 @@
   margin: 1rem;
   height: 25rem;
   cursor: pointer;
+  box-shadow: 0 3px 1rem rgba(0,0,0,.1)
 }
 .menu .box-container .box:hover {
   background-color: var(--white);
