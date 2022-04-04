@@ -3,10 +3,12 @@
   font-size: 3.5rem;
   text-align: center;
   text-transform: uppercase;
-  text-align: center;
+ 
   display: flex;
   justify-content: center;
   background-color: var(--background);
+ 
+ 
 }
 
 .title-history span {
@@ -18,27 +20,31 @@
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1.5rem;
   background-color: var(--background);
-  padding-top: 3rem;
+  
+  
 }
 
 .menu .box-container .box {
   padding: 2rem;
   text-align: center;
-
-  background-color: var(--background);
-  border-radius: 30px;
+  background: rgba(255,255,255,0.1);
+ box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+  border-radius: 15px;
   margin: 1rem;
   height: 25rem;
   cursor: pointer;
-  box-shadow: 0 3px 1rem rgba(0,0,0,.1)
+  border-top: 3px solid rgba(255 , 255, 255, 0.5);
+  border-left: 3px solid rgba(255 , 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  
 }
-.menu .box-container .box:hover {
-  background-color: var(--white);
-}
+
+
+
 .menu .box-container .box img {
   height: 15rem;
   border-radius: 30px;
-  width: 15rem;
+  width: 23rem;
 }
 
 .menu .box-container .box h3 {
@@ -55,8 +61,10 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1580px) {
   .menu .box-container .box img {
     width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

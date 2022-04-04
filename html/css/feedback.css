@@ -6,10 +6,9 @@
 
   display: flex;
   justify-content: center;
-  background: url(../img/backreview.png);
+  
   color: var(--white);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #443b3c;
 }
 
 .feedback span {
@@ -20,23 +19,24 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1.5rem;
-  background-color: var(--background);
+  background-color: #443b3c;
   padding-top: 2rem;
-  background: url(../img/backreview.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+ 
+  
 }
 
 .feedback .box-container .box {
   padding: 1rem;
   text-align: center;
+ 
 }
 
 .feedback .box-container .box img {
-  max-width: 50%;
+  max-width: 20rem;
   border-radius: 2rem;
+  
+  backdrop-filter: blur(5px);
 }
-
 .feedback .box-container .box h3 {
   font-family: var(--font);
   font-size: 2.5rem;
