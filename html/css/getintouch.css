@@ -1,14 +1,12 @@
-
-
 .container {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
 }
 
 .container .box-contact {
+  margin: 3rem;
   width: 100%;
   display: flex;
 
