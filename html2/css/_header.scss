@@ -1,0 +1,67 @@
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 7%;
+  position: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+          .search-bar{
+            
+            margin: 2rem;
+            
+            .imput{
+              border-radius: 20px;
+              width: 100%;
+              height: 30px;
+              text-align: center;
+              font-family: $font;
+              font-size: 1.2rem;
+
+                
+              
+            }
+            
+
+          }
+        #menubtn{
+            display: none;
+           
+        }
+    img {
+      height: 3rem;
+    }
+
+    .box-countainer {
+      display: flex;
+      font-family: $font;
+
+      .text-nav {
+        margin: 1rem;
+        font-size: 1.6rem;
+        color: $fontColor;
+        border-bottom: $fontColor 1px transparent;
+        a {
+          &:hover {
+            border-bottom: $houver 2px solid;
+            color: $houver;
+          }
+        }
+      }
+    }
+  }
+  
+ 
+  
+}

@@ -16,8 +16,6 @@
   background-color: black;
 }
 
-
-
 .header .logo {
   height: 6rem;
 }
@@ -26,13 +24,7 @@
   cursor: pointer;
   margin-left: 2rem;
 }
-.market {
-  display: flex;
-  justify-content: center;
-}
-.market .img {
-  width: 30px;
-}
+
 
 .header .navbar a {
   margin: 1rem;
@@ -49,7 +41,6 @@
   border-bottom: 0.2rem solid var(--button);
   padding-bottom: 0.5rem;
 }
-
 
 #menu-btn {
   display: none;
@@ -68,7 +59,6 @@
     display: inline-block;
   }
 
-  
   .header .navbar {
     position: absolute;
     top: 100%;
@@ -87,4 +77,8 @@
     font-size: 2rem;
     color: var(--black);
   }
+
+
+  
+
 }

@@ -1,0 +1,134 @@
+body * {
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+body section {
+  padding: 2rem;
+}
+body html {
+  font-size: 62.6%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+body html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+body html::-webkit-scrollbar-track {
+  background: transparent;
+}
+body html::-webkit-scrollbar-thumb {
+  background: var(--white);
+  border-radius: 5rem;
+}
+@media (max-width: 991px) {
+  body .html {
+    font-size: 55%;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 7%;
+  position: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+}
+header .nav .search-bar {
+  margin: 2rem;
+}
+header .nav .search-bar .imput {
+  border-radius: 20px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.2rem;
+}
+header .nav #menubtn {
+  display: none;
+}
+header .nav img {
+  height: 3rem;
+}
+header .nav .box-countainer {
+  display: flex;
+  font-family: "Bebas Neue", cursive;
+}
+header .nav .box-countainer .text-nav {
+  margin: 1rem;
+  font-size: 1.6rem;
+  color: white;
+  border-bottom: white 1px transparent;
+}
+header .nav .box-countainer .text-nav a:hover {
+  border-bottom: #ff914d 2px solid;
+  color: #ff914d;
+}
+
+.home {
+  width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  max-width: 95%;
+  align-items: center;
+}
+.home .roll {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: white;
+}
+.home .box-products {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-flow: wrap;
+}
+.home .box-products .menu-scroll {
+  position: relative;
+  width: 200px;
+  min-height: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.home .box-products .menu-scroll .photo-text img {
+  width: 120px;
+  border-radius: 50%;
+}
+.home .box-products .menu-scroll h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

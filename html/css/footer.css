@@ -10,7 +10,9 @@
 }
 
 .social {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
   margin: 3rem 1rem;
 }
@@ -23,7 +25,6 @@
 
 @media screen and (min-width: 459px) {
   .footer {
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
   }

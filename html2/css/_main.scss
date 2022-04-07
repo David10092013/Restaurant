@@ -1,0 +1,54 @@
+
+
+
+
+.home{
+    
+    width: 100%;
+    @include mainSetings();
+   margin: 2%;
+   max-width: 95%;
+    align-items: center;
+
+  .roll{
+      min-width: 40px;
+      min-height: 40px;
+      border-radius: 50%;
+        font-size: 1.5rem;
+        font-weight: bolder;
+      background-color: white;
+      
+  }
+    
+    
+
+    .box-products{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-flow: wrap;
+        
+        .menu-scroll{
+
+           @include boxBack();
+            
+
+
+            .photo-text img {
+
+                width: 120px;
+                border-radius: 50%;
+
+            }
+
+            h1{
+                @include h1();
+            }
+
+        }
+    }
+
+    
+
+}
