@@ -1,17 +1,17 @@
 body{
 
-  
+  box-sizing: border-box;
 
   * {
     font-family: var(--font);
     margin: 0;
-    padding: 0;
+    padding: 1rem ;
     box-sizing: border-box;
     outline: none;
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: 0.2s linear;
+    
     
   }
   
@@ -56,11 +56,11 @@ body{
   
 
   @mixin boxBack {
-    position: relative;
+    
     width: 200px;
     min-height: 250px;background: rgba(255,255,255,0.1);
     border-radius: 10px;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(5px);
@@ -89,7 +89,7 @@ body{
   font-weight: lighter;
   margin-top: 1rem;
   text-transform: uppercase;
-text-align: center;
+  text-align: center;
     
   }
 
@@ -98,6 +98,24 @@ text-align: center;
     justify-content: center;
     align-items: center;
 }
+
+@mixin tablet {
+  @media screen  and (max-width: 833px){
+    @content;
+    
+  }
+  
+};
+
+@mixin mobile{
+  @media screen  and (max-width: 280px){
+    @content;
+    
+  }
+  
+};
+
+
 
     @import "./header";
     @import "./main";

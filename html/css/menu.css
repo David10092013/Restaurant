@@ -19,6 +19,8 @@
   grid-auto-columns: 50px;
   gap: 1.5rem;
   background-color: var(--background);
+  padding-top: 3rem;
+  
 }
 
 .menu .box-container .box {

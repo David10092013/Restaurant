@@ -3,16 +3,20 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+
 }
 
 .container .box-contact {
-  margin: 3rem;
+  margin: 2rem;
   width: 100%;
   display: flex;
 
   justify-content: center;
   gap: 20px;
   flex-flow: wrap;
+  align-items: center;
+ 
 }
 
 .container .box-contact .text-info {
@@ -20,10 +24,11 @@
   justify-content: center;
   align-items: center;
   width: 250px;
+ 
 }
 
 .container .box-contact .text-info {
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
