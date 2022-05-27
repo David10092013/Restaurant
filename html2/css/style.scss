@@ -1,6 +1,6 @@
-body{
+body {
 
-  
+
 
   * {
     font-family: var(--font);
@@ -12,31 +12,34 @@ body{
     text-decoration: none;
     text-transform: capitalize;
     transition: 0.2s linear;
-    
+
   }
-  
+
   section {
     padding: 2rem;
   }
-  
+
   html {
     font-size: 62.6%;
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
-    
+
   }
+
   html::-webkit-scrollbar {
     width: 0.8rem;
   }
+
   html::-webkit-scrollbar-track {
     background: transparent;
   }
-  
+
   html::-webkit-scrollbar-thumb {
     background: var(--white);
     border-radius: 5rem;
   }
+
   @media (max-width: 991px) {
     .html {
       font-size: 55%;
@@ -47,61 +50,88 @@ body{
 
 
 }
-  
-  
-  $font:'Bebas Neue', cursive;
-  $fontColor:white ;
-  $backgroundColor:#efefef;
-  $houver:#ff914d;
-  
-
-  @mixin boxBack {
-    position: relative;
-    width: 200px;
-    min-height: 250px;background: rgba(255,255,255,0.1);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 25px 45px  rgba(0,0,0,0.1);
-    border: 1px solid rgb(255,255,255,0.5);
-   
 
 
-    
+$font: 'Bebas Neue', cursive;
+$fontColor: white;
+$backgroundColor: #efefef;
+$houver: #ff914d;
 
-  }
-  @mixin mainSetings {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    
-  
-    
-    
-  }
 
-  @mixin  h1{
+
+
+@mixin boxBack {
+  position: relative;
+  width: 200px;
+  min-height: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(255, 255, 255, 0.5);
+
+
+
+
+
+}
+
+
+
+
+
+@mixin mainSetings {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+
+
+
+}
+
+@mixin h1 {
 
   font-family: $font;
   font-size: 1.5rem;
   font-weight: lighter;
   margin-top: 1rem;
   text-transform: uppercase;
-text-align: center;
-    
-  }
+  text-align: center;
 
-  @mixin  flexCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-    @import "./header";
-    @import "./main";
-   
-    
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
+@mixin media-phones {
+  @media screen and (max-width: 600px) {}
+}
+
+@mixin media-tablet {
+  @media screen and (min-width:600px) {}
+
+
+}
+
+@mixin media-big-tablet {
+  @media screen and (max-width:760px) {}
+
+
+}
+
+
+
+@mixin media-desktops {
+  @media screen and (min-width: 1200px) {}
+}
+
+@import "./header";
+@import "./main";

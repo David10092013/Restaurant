@@ -28,24 +28,80 @@
         justify-content: center;
         gap: 20px;
         flex-flow: wrap;
-        
+        box-sizing: border-box;
+        word-break: break-all;
+    
         .menu-scroll{
 
            @include boxBack();
-            
+          
+           &:hover{
+            transform: scale(1.2) rotate(-0.2deg)
+        }
 
 
             .photo-text img {
 
                 width: 120px;
                 border-radius: 50%;
-
-            }
+                cursor: pointer;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+             
+                
+               
+                
+             }
+                   
 
             h1{
                 @include h1();
+                cursor: pointer;
+                bottom: 2px;
             }
+            .box-p{
+                
+                 box-sizing: border-box;
+                display: flex;
+                width: 200px;
+                height: 50px;
+                box-sizing: border-box;
+                background: rgba(248, 248, 248, 0.5);
+                color: white;
+                position: absolute;
+                border-radius: 6px;
+                transition:     transform 500ms ease;
+                
 
+                &:hover {
+                    height: 150px;
+                    bottom: 2px;
+                    background: rgba(12, 12, 12, 0.5);
+                    
+                  }
+
+            }
+            p  {
+                
+                
+               
+                
+                font-family: $font;
+                padding: 4px;
+                cursor: pointer;
+                font-size: 12px;
+               opacity: 0;
+               visibility: visible;
+                
+
+                &:hover {
+                    opacity: 1;
+                    visibility: visible;
+                  }
+                 
+            }
         }
     }
 

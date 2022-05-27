@@ -62,22 +62,22 @@ header .nav .search-bar .imput {
   font-size: 1.2rem;
 }
 header .nav #menubtn {
-  display: none;
+  opacity: 0.1;
 }
 header .nav img {
   height: 3rem;
 }
-header .nav .box-countainer {
+header .nav .box-container {
   display: flex;
   font-family: "Bebas Neue", cursive;
 }
-header .nav .box-countainer .text-nav {
+header .nav .box-container .text-nav {
   margin: 1rem;
   font-size: 1.6rem;
   color: white;
   border-bottom: white 1px transparent;
 }
-header .nav .box-countainer .text-nav a:hover {
+header .nav .box-container .text-nav a:hover {
   border-bottom: #ff914d 2px solid;
   color: #ff914d;
 }
@@ -105,6 +105,8 @@ header .nav .box-countainer .text-nav a:hover {
   justify-content: center;
   gap: 20px;
   flex-flow: wrap;
+  box-sizing: border-box;
+  word-break: break-all;
 }
 .home .box-products .menu-scroll {
   position: relative;
@@ -120,9 +122,17 @@ header .nav .box-countainer .text-nav a:hover {
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
+.home .box-products .menu-scroll:hover {
+  transform: scale(1.2) rotate(-0.2deg);
+}
 .home .box-products .menu-scroll .photo-text img {
   width: 120px;
   border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 .home .box-products .menu-scroll h1 {
   font-family: "Bebas Neue", cursive;
@@ -131,4 +141,35 @@ header .nav .box-countainer .text-nav a:hover {
   margin-top: 1rem;
   text-transform: uppercase;
   text-align: center;
+  cursor: pointer;
+  bottom: 2px;
+}
+.home .box-products .menu-scroll .box-p {
+  box-sizing: border-box;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  box-sizing: border-box;
+  background: rgba(248, 248, 248, 0.5);
+  color: white;
+  position: absolute;
+  border-radius: 6px;
+  transition: transform 500ms ease;
+}
+.home .box-products .menu-scroll .box-p:hover {
+  height: 150px;
+  bottom: 2px;
+  background: rgba(12, 12, 12, 0.5);
+}
+.home .box-products .menu-scroll p {
+  font-family: "Bebas Neue", cursive;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  opacity: 0;
+  visibility: visible;
+}
+.home .box-products .menu-scroll p:hover {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */

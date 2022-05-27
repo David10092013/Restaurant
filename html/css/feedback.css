@@ -35,7 +35,7 @@
 .feedback .box-container .box img {
   max-width: 15rem;
   border-radius: 50%;
-
+  margin-top: 20px;
   backdrop-filter: blur(5px);
 }
 .feedback .box-container .box h3 {
